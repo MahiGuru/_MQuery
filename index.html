@@ -9,12 +9,13 @@
             .red {
                 color: red;
             }
-            .blue{
-              color:blue;
+            .blue {
+                color: blue;
             }
-            .grey{
-              color:grey;
+            .grey {
+                color: grey;
             }
+
         </style>
 
     </head>
@@ -25,18 +26,39 @@
                 MYID Content comes MYID inside.....
                 <div>
                     <span class="myspan" class="spanClass" title="title">MYSPAN Content<br/>
-                      <span class="insideMySpan"> SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>> </span>
+                        <span class="insideMySpan">
+                            SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                        </span>
                     </span>
                 </div>
                 <div>
-                    <span class="myspan">Inside content <br />
+                    <span class="myspan">Inside content
+                        <br/>
 
-                        <span class="insideMySpan"> SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>> </span>
+                        <span class="insideMySpan">
+                            SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                        </span>
                     </span>
                 </div>
 
             </p>
         </div>
+        <p>
+          FirstName  : <input type="text" class="inputName" value="" /><br />
+            LastName  : <input type="text" class="lastName" value="" /><br />
+              SELECT  :
+              <select class="selectName">
+                <option value="choose">Please choose</option>
+                <option value="Red"> RED </option>
+                <option value="Blue"> BLUE </option>
+                <option value="Green"> GREEN </option>
+              </select>
+
+              <br />
+          <input type="button" class="addBtn"  value="click here"/>
+          <input type="button" class="dblClickBtn"  value="Double click here"/>
+        </p>
+
         <div class="myClass1">
             <p>
                 MYCLASS1 Content comes 22222222 inside.....
@@ -44,6 +66,17 @@
 
             <div>
                 <span class="myspan" class="spanClass" title="title">MYSPAN Content<br/>
+                    <span class="insideMySpan">
+                        SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                        <span class="insideInsideMySpan">
+                            SUB SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            <span class="insideInsideInsideMySpan">
+                                SUB SUB SUB level >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                            </span>
+                        </span>
+
+                    </span>
                 </span>
             </div>
             <div>
@@ -55,45 +88,7 @@
                 MYCLASS3 Content comes MYCLASS inside.....
             </p>
         </div>
-        <script type="text/javascript">
-            /*
-
-        //console.log(_M("[title='Mahi']").innerHTML());
-        _M(".myspan").append("<p> adding using append method</p>");
-
-        _M("#myID").addClass("add2 add3 add4 add5 add6");
-
-        _M("#myID").removeClass("add2 add3 add5");
-
-        _M("#myID").insertBefore("<h2>Heading come Before </h2>");
-
-        _M("#myID").insertAfter("<h2>Heading comes After</h2>");
-
-        _M("#myID").next().append("Adding Text from NEXT");
-
-        _M("#myID").prev().append("Adding Text from PREV");
-
-        _M("#myID").find(".myspan").addClass("addAnotherClass");
-
-        _M("#myID, .myClass1").addClass("addAnotherClass").hide();
-
-        _M(".myClass1").removeClass("addAnotherClass").show();
-
-
-        var arr = [{name:"Maks"}, {name:"lucky"}, {name : "mahi"}];
-
-        _M.each(arr, function(item, i){
-            //console.log(item, i);
-        })
-        */
-            _M("#myID").addClass("red");
-            _M(".myClass1").addClass("addAnoth2222erClass");
-            //_M("#myID").addClass("add2 add3 add4 add5 add6");
-            _M("#myID").find(".myspan").addClass("blue").find(".insideMySpan").addClass("grey");
-            Mscript("#myID").each(function(item, i) {
-                //_M(item).addClass("red"); console.log(_M(item).find(".myspan").addClass("red")); console.log(_M(item).innerHTML())
-            });
-        </script>
+        <script type="text/javascript" src="master.js"></script>
     </body>
 
 </html>

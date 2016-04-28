@@ -270,7 +270,7 @@
               cloneHtml = elem.cloneNode(true);
             });
             return cloneHtml;
-        }, 
+        },
         lastChild : function(){
           var lastChild;
           this.findEachSelector(function(elem, i){
